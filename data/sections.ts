@@ -1,43 +1,42 @@
 export const sections = [
     {
+        title: "Woman as a Mother",
         slug: "mother",
-        title: "Mother",
-        description: "The heart that nurtures."
+        description: "The heart that nurtures.",
     },
     {
-        slug: "dreamer",
-        title: "Dreamer",
-        description: "The one who imagines what could be."
-    },
-    {
+        title: "Woman as a Student",
         slug: "student",
-        title: "Student",
-        description: "The one who learns and grows."
+        description: "Learning and becoming.",
     },
     {
+        title: "Woman as a Leader",
         slug: "leader",
-        title: "Leader",
-        description: "The one who guides and inspires."
+        description: "Leading with vision.",
     },
     {
+        title: "Woman as a Dreamer",
+        slug: "dreamer",
+        description: "Imagining what is possible.",
+    },
+    {
+        title: "Woman as a Worker",
         slug: "worker",
-        title: "Worker",
-        description: "The one who builds and perseveres."
+        description: "Dedication and resilience.",
     },
     {
+        title: "Woman as a Caregiver",
         slug: "caregiver",
-        title: "Caregiver",
-        description: "The one who supports with steady hands."
+        description: "Showing up for others.",
     },
     {
+        title: "Woman as Herself",
         slug: "herself",
-        title: "Herself",
-        description: "The one who chooses her own path."
+        description: "Beyond every role.",
     },
     {
+        title: "Woman and Her Body",
         slug: "body",
-        title: "Body",
-        description: "The vessel that carries her strength."
-    }
-
-]
+        description: "Cycles, change and life.",
+    },
+];
