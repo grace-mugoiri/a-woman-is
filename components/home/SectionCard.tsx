@@ -12,14 +12,23 @@ export default function SectionCard({
     return (
         <Link
             href={`/chapters/${slug}`}
-            className="group rounded-3xl border p-6 transition hover:-translate-y-1 hover:shadow-lg"
+            className="
+        group
+        rounded-3xl
+        border
+        bg-white
+        p-8
+        transition-all
+        hover:-translate-y-2
+        hover:shadow-xl
+      "
         >
             <h3 className="text-2xl font-semibold">
                 {title}
             </h3>
 
-            <p className="mt-3 text-sm text-gray-500">
-                Explore this chapter →
+            <p className="mt-4 text-gray-500">
+                Read this chapter
             </p>
         </Link>
     );

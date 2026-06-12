@@ -8,12 +8,12 @@ export default function Navbar() {
                     href="/"
                     className="text-2xl font-semibold"
                 >
-                    A Woman Is
+                    A Woman Is...
                 </Link>
 
                 <div className="hidden md:flex gap-6 text-sm">
                     <a href="#explore">Explore</a>
-                    <a href="#about">About</a>
+                    <Link href="#about">About</Link>
                 </div>
             </nav>
         </header>
