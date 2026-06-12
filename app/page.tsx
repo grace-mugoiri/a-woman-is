@@ -8,6 +8,8 @@ import SectionGrid from "@/components/home/SectionGrid";
 import AboutSection from "@/components/home/AboutSection";
 import FeaturedReflection from "@/components/home/FeaturedReflection";
 
+import StatsStrip from "@/components/home/StatsStrip";
+
 export default function Home() {
   return (
     <>
@@ -16,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <FeaturedReflection />
+        <StatsStrip />
         <IntroQuote />
         <SectionGrid />
         <AboutSection />
