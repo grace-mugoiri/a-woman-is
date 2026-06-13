@@ -1,5 +1,6 @@
 import { sections } from "@/data/sections";
 import { notFound } from "next/navigation";
+import ChapterNavigation from "@/components/chapters/ChapterNavigation";
 
 export default async function ChapterPage({
     params,
@@ -25,6 +26,8 @@ export default async function ChapterPage({
             <p className="text-xl text-gray-600">
                 Stories and reflections coming soon.
             </p>
+
+            <ChapterNavigation />
         </main>
     );
 }
