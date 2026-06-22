@@ -5,7 +5,7 @@ import ChapterImageCard from "./ChapterImageCard";
 
 export default function FeaturedChapters() {
     return (
-        <section className="max-w-7xl mx-auto px-6 py-24">
+        <section id="explore" className="max-w-7xl mx-auto px-6 py-24">
             <h2 className="text-5xl mb-12">
                 Explore Her World
             </h2>
@@ -18,7 +18,7 @@ export default function FeaturedChapters() {
                         slug={section.slug}
                         image={
                             chapterImages[
-                            section.slug as keyof typeof chapterImages
+                                section.slug as keyof typeof chapterImages
                             ]
                         }
                     />

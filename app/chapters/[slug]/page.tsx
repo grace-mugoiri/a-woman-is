@@ -1,6 +1,12 @@
 import { sections } from "@/data/sections";
 import { notFound } from "next/navigation";
 import ChapterNavigation from "@/components/chapters/ChapterNavigation";
+import ChapterHero from "@/components/chapters/ChapterHero";
+import QuoteBlock from "@/components/chapters/QuoteBlock";
+import ReflectionBlock from "@/components/chapters/ReflectionBlock";
+import StorySection from "@/components/chapters/StorySection";
+import ClosingThought from "@/components/chapters/ClosingThought";
+import { chapters } from "@/content/chapters";
 
 export default async function ChapterPage({
     params,
@@ -9,23 +15,35 @@ export default async function ChapterPage({
 }) {
     const { slug } = await params;
 
-    const chapter = sections.find(
-        (item) => item.slug === slug
-    );
+    const content = chapters[slug as keyof typeof chapters];
+    const section = sections.find((item) => item.slug === slug);
 
-    if (!chapter) {
+    if (!content || !section) {
         notFound();
     }
 
     return (
         <main className="max-w-4xl mx-auto px-6 py-24">
-            <h1 className="text-6xl mb-6">
-                {chapter.title}
-            </h1>
+            <ChapterHero
+                title={content.title}
+                description={section.description}
+            />
 
-            <p className="text-xl text-gray-600">
-                Stories and reflections coming soon.
-            </p>
+            <QuoteBlock quote={content.quote} />
+
+            <ReflectionBlock text={content.reflection} />
+
+            <div className="space-y-16">
+                {content.stories.map((story) => (
+                    <StorySection
+                        key={story.title}
+                        title={story.title}
+                        content={story.content}
+                    />
+                ))}
+            </div>
+
+            <ClosingThought text={content.closingThought} />
 
             <ChapterNavigation />
         </main>
