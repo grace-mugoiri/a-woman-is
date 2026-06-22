@@ -45,7 +45,7 @@ export default async function ChapterPage({
 
             <ClosingThought text={content.closingThought} />
 
-            <ChapterNavigation />
+            <ChapterNavigation currentSlug={slug} />
         </main>
     );
 }

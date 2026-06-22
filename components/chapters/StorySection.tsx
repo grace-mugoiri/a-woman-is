@@ -8,7 +8,7 @@ export default function StorySection({
     content,
 }: Props) {
     return (
-        <section className="my-16 panel-glow rounded-[2rem] border border-soft p-10">
+        <section className="my-16 panel-glow rounded-[2rem] border border-soft p-10 fade-up">
             <h2 className="text-3xl mb-6 text-purple-900">
                 {title}
             </h2>

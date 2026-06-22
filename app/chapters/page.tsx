@@ -20,11 +20,12 @@ export default function ChaptersPage() {
             </section>
 
             <div className="grid gap-8 md:grid-cols-2">
-                {sections.map((section) => (
+                {sections.map((section, index) => (
                     <Link
                         key={section.slug}
                         href={`/chapters/${section.slug}`}
-                        className="rounded-[2rem] border border-soft bg-white/90 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                        className="rounded-[2rem] border border-soft bg-white/90 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg fade-up"
+                        style={{ animationDelay: `${index * 90}ms` }}
                     >
                         <h2 className="text-3xl font-semibold mb-3 text-purple-900">
                             {section.title}

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./animations.css";
 
 import { playfair, inter } from "./fonts";
+
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "A Woman Is",
@@ -20,6 +23,7 @@ export default function RootLayout({
         className={`${playfair.variable} ${inter.variable}`}
       >
         {children}
+        <AnimateOnView />
       </body>
     </html>
   );

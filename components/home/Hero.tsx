@@ -2,7 +2,7 @@ export default function Hero() {
     return (
         <section className="min-h-screen flex items-center bg-[radial-gradient(circle_at_top,_rgba(248,191,255,0.35),transparent_35%),radial-gradient(circle_at_15%_20%,rgba(129,140,248,0.15),transparent_30%)]">
             <div className="max-w-6xl mx-auto px-6 py-24">
-                <div className="panel-glow rounded-[2.5rem] border border-soft p-12 shadow-xl">
+                <div className="panel-glow rounded-[2.5rem] border border-soft p-12 shadow-xl reveal-hero">
                     <p className="text-sm uppercase tracking-[0.35em] text-pink-700/80">
                         A woman is many things
                     </p>
