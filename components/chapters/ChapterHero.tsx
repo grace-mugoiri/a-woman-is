@@ -8,12 +8,12 @@ export default function ChapterHero({
     description,
 }: Props) {
     return (
-        <section className="py-20">
-            <h1 className="text-6xl mb-6">
+        <section className="py-20 panel-glow rounded-[2rem] border border-soft p-10 mb-12">
+            <h1 className="text-6xl mb-6 text-purple-900">
                 {title}
             </h1>
 
-            <p className="text-xl text-gray-600 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
                 {description}
             </p>
         </section>

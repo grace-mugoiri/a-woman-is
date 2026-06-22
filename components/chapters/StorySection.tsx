@@ -8,12 +8,12 @@ export default function StorySection({
     content,
 }: Props) {
     return (
-        <section className="my-16">
-            <h2 className="text-3xl mb-6">
+        <section className="my-16 panel-glow rounded-[2rem] border border-soft p-10">
+            <h2 className="text-3xl mb-6 text-purple-900">
                 {title}
             </h2>
 
-            <p className="leading-8 text-lg">
+            <p className="leading-8 text-lg text-slate-700">
                 {content}
             </p>
         </section>

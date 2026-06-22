@@ -23,7 +23,7 @@ export default async function ChapterPage({
     }
 
     return (
-        <main className="max-w-4xl mx-auto px-6 py-24">
+        <main className="max-w-4xl mx-auto px-6 py-24 panel-glow rounded-[2.5rem] border border-soft">
             <ChapterHero
                 title={content.title}
                 description={section.description}
