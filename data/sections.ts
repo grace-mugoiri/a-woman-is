@@ -25,9 +25,9 @@ export const sections = [
         description: "Dedication and resilience.",
     },
     {
-        title: "Woman as a Caregiver",
+        title: "Woman as an Explorer",
         slug: "caregiver",
-        description: "Showing up for others.",
+        description: "Charting her own course.",
     },
     {
         title: "Woman as Herself",

@@ -7,6 +7,7 @@ import ReflectionBlock from "@/components/chapters/ReflectionBlock";
 import StorySection from "@/components/chapters/StorySection";
 import ClosingThought from "@/components/chapters/ClosingThought";
 import { chapters } from "@/content/chapters";
+import { chapterImages } from "@/data/chapterImages";
 
 export default async function ChapterPage({
     params,
@@ -17,6 +18,7 @@ export default async function ChapterPage({
 
     const content = chapters[slug as keyof typeof chapters];
     const section = sections.find((item) => item.slug === slug);
+    const image = chapterImages[slug as keyof typeof chapterImages];
 
     if (!content || !section) {
         notFound();
@@ -27,6 +29,7 @@ export default async function ChapterPage({
             <ChapterHero
                 title={content.title}
                 description={section.description}
+                image={image}
             />
 
             <QuoteBlock quote={content.quote} />

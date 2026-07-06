@@ -1,32 +1,32 @@
 import { ChapterContent } from "@/types/story";
 
 export const caregiverChapter: ChapterContent = {
-    title: "Woman as a Caregiver",
+    title: "Woman as an Explorer",
 
     quote:
-        "Caring for someone else can feel like the softest and heaviest thing she carries.",
+        "She ventures into the unknown not because she is fearless, but because curiosity calls her forward.",
 
     reflection:
-        "Caregiving is an act of love and a test of endurance. She often gives in ways no one notices, trusting the connection is enough.",
+        "An explorer is someone who refuses to accept the map as final. She charts her own course, discovers her own truths, and returns with stories that expand what is possible.",
 
     stories: [
         {
-            title: "The Night She Stayed Awake",
+            title: "The Path She Chose",
             content:
-                "She sat quietly while someone else slept. The night was long, but her presence was the kind of care that made rest possible."
+                "Everyone told her which way to go. She listened, then gently stepped sideways onto a trail no one had shown her. That choice became the beginning of her own adventure."
         },
         {
-            title: "The Quiet Meal Prepared",
+            title: "The Question She Asked",
             content:
-                "She cooked a simple meal with attention. The food was ordinary, but the care behind it was intentional and constant."
+                "Instead of accepting the answer, she asked why. That single question opened a door she didn't know existed, leading her to territories she never expected to find."
         },
         {
-            title: "The Time She Listened",
+            title: "The Risk She Took",
             content:
-                "Sometimes the deepest care was not a solution, but the decision to sit and hear what was unspoken."
+                "She left the familiar behind knowing she might get lost. But in the getting lost, she found something more valuable than any map: the knowledge that she could find her way."
         }
     ],
 
     closingThought:
-        "A caregiver does not always receive gratitude. She asks only to be seen and to remember that her own needs matter too."
+        "An explorer carries both wonder and wisdom. She knows that the greatest discoveries often come from the willingness to wander beyond the boundaries of what is known."
 };

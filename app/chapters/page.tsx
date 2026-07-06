@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { sections } from "@/data/sections";
+import { chapterImages } from "@/data/chapterImages";
 
 export default function ChaptersPage() {
     return (
@@ -24,16 +26,29 @@ export default function ChaptersPage() {
                     <Link
                         key={section.slug}
                         href={`/chapters/${section.slug}`}
-                        className="rounded-[2rem] border border-soft bg-white/90 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg fade-up"
+                        className="group overflow-hidden rounded-[2rem] border border-soft bg-white/90 shadow-sm transition hover:-translate-y-1 hover:shadow-lg fade-up"
                         style={{ animationDelay: `${index * 90}ms` }}
                     >
-                        <h2 className="text-3xl font-semibold mb-3 text-purple-900">
-                            {section.title}
-                        </h2>
+                        <div className="relative h-64 overflow-hidden bg-slate-100">
+                            <Image
+                                src={chapterImages[section.slug as keyof typeof chapterImages]}
+                                alt={section.title}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 45vw"
+                                className="object-cover transition duration-500 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                        </div>
 
-                        <p className="text-slate-600">
-                            {section.description}
-                        </p>
+                        <div className="p-8">
+                            <h2 className="text-3xl font-semibold mb-3 text-purple-900">
+                                {section.title}
+                            </h2>
+
+                            <p className="text-slate-600">
+                                {section.description}
+                            </p>
+                        </div>
                     </Link>
                 ))}
             </div>
