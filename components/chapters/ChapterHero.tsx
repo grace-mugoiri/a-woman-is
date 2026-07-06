@@ -17,12 +17,12 @@ export default function ChapterHero({
             <div className="pointer-events-none absolute left-0 bottom-0 h-56 w-56 rounded-full bg-purple-200/30 blur-3xl" />
 
             {image ? (
-                <div className="relative mb-8 overflow-hidden rounded-[1.75rem] h-72">
+                <div className="relative mb-8 overflow-hidden rounded-[1.75rem] h-48 md:h-56">
                     <Image
                         src={image}
                         alt={title}
                         fill
-                        sizes="100vw"
+                        sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1280px) 70vw, 600px"
                         loading="eager"
                         className="object-cover transition duration-500"
                     />

@@ -19,6 +19,18 @@ export default function Navbar() {
                         Chapters
                     </Link>
                     <Link
+                        href="/stories"
+                        className="rounded-full bg-purple-100 px-4 py-2 transition hover:bg-purple-200"
+                    >
+                        Stories
+                    </Link>
+                    <Link
+                        href="/submit-story"
+                        className="rounded-full bg-gradient-to-r from-pink-300 to-purple-300 px-4 py-2 font-semibold transition hover:shadow-md"
+                    >
+                        Share Story
+                    </Link>
+                    <Link
                         href="#about"
                         className="rounded-full bg-purple-100 px-4 py-2 transition hover:bg-purple-200"
                     >

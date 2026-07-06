@@ -5,6 +5,7 @@ import "./animations.css";
 import { playfair, inter } from "./fonts";
 
 import AnimateOnView from "@/components/AnimateOnView";
+import FloatingStoryButton from "@/components/FloatingStoryButton";
 
 export const metadata: Metadata = {
   title: "A Woman Is",
@@ -24,6 +25,7 @@ export default function RootLayout({
       >
         {children}
         <AnimateOnView />
+        <FloatingStoryButton />
       </body>
     </html>
   );

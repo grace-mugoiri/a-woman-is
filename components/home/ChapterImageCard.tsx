@@ -17,12 +17,12 @@ export default function ChapterImageCard({
             href={`/chapters/${slug}`}
             className="group overflow-hidden rounded-3xl border bg-white"
         >
-            <div className="relative h-72">
+            <div className="relative h-48">
                 <Image
                     src={image}
                     alt={title}
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) calc(50vw - 24px), 280px"
                     className="object-cover transition duration-500 group-hover:scale-105"
                 />
             </div>

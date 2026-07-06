@@ -6,6 +6,10 @@ import { chapterImages } from "@/data/chapterImages";
 export default function ChaptersPage() {
     return (
         <main className="max-w-7xl mx-auto px-6 py-24">
+            <Link href="/" className="text-pink-700 hover:text-pink-800 text-sm mb-6 inline-block">
+                ← Back home
+            </Link>
+
             <section className="mb-16 panel-glow rounded-[2rem] border border-soft p-12">
                 <p className="text-sm uppercase tracking-[0.35em] text-pink-700/80">
                     Discover the chapters
@@ -29,12 +33,12 @@ export default function ChaptersPage() {
                         className="group overflow-hidden rounded-[2rem] border border-soft bg-white/90 shadow-sm transition hover:-translate-y-1 hover:shadow-lg fade-up"
                         style={{ animationDelay: `${index * 90}ms` }}
                     >
-                        <div className="relative h-64 overflow-hidden bg-slate-100">
+                        <div className="relative h-40 overflow-hidden bg-slate-100">
                             <Image
                                 src={chapterImages[section.slug as keyof typeof chapterImages]}
                                 alt={section.title}
                                 fill
-                                sizes="(max-width: 768px) 100vw, 45vw"
+                                sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) calc(50vw - 24px), 250px"
                                 className="object-cover transition duration-500 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
